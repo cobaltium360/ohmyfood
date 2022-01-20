@@ -135,6 +135,7 @@ body {
   text-decoration: none;
   color: black;
   margin: auto;
+  font-weight: bold;
 }
 .fonctionnement_etape_ol_li i {
   display: flex;
@@ -143,6 +144,10 @@ body {
 
 .fonctionnement_etape_ol_li:hover {
   background: #efe5fc;
+}
+
+.fonctionnement_etape_ol_li:hover i {
+  color: #9356DC;
 }
 
 /*main -- bas*/
@@ -186,6 +191,7 @@ body {
   background: #99E2D0;
   padding: 0.3rem;
   font-weight: bold;
+  border-radius: 3px;
   color: #038968;
 }
 
@@ -255,6 +261,8 @@ footer {
 .container_footer {
   width: 90%;
   margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
 }
 .container_footer .footer_titre {
   font-family: "Shrikhand", cursive;
@@ -265,6 +273,12 @@ footer {
   margin-bottom: 0;
   list-style: none;
   padding-left: 0;
+}
+.container_footer li {
+  margin-bottom: 0.5rem;
+}
+.container_footer li:last-child {
+  margin-bottom: 0;
 }
 .container_footer .footer_li a {
   text-decoration: none;
@@ -384,6 +398,10 @@ header {
   font-size: 1rem;
 }
 
+.container_carte h3 {
+  font-weight: 100;
+}
+
 .container_btn {
   width: fit-content;
   margin: 2rem auto;
@@ -391,7 +409,7 @@ header {
 .container_btn .btn_commander {
   text-decoration: none;
   color: #fff;
-  padding: 1rem 1.75rem;
+  padding: 1rem 3rem;
   background: linear-gradient(-8deg, #9356DC, #FF79DA);
   border-radius: 40px;
   font-weight: bold;
@@ -422,7 +440,7 @@ header {
   overflow: hidden;
   margin-left: 1rem;
 }
-.card_menu_text_text h3 {
+.card_menu_text_text h4 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -515,6 +533,10 @@ header {
   }
 }
 @media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.2rem;
+  }
+
   .container_menu_menu {
     max-width: 80rem;
     margin-left: auto;
